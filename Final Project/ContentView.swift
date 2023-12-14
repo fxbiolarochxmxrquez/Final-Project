@@ -29,7 +29,9 @@ struct InstructionsView: View {
         ZStack {
             Color.blue.opacity(0.4).ignoresSafeArea()
         HStack {
+            Button("Start") {
                 
+                }
             }
         }
     }
