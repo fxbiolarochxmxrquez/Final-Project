@@ -16,7 +16,7 @@ struct ContentView: View {
                 Text("Meditation App")
                     .font(.title)
                     .fontWeight(.bold)
-              
+                NavigationLink("Start Session", destination: InstructionsView())
             }
             .padding()
             }
@@ -24,6 +24,16 @@ struct ContentView: View {
     }
 }
 
+struct InstructionsView: View {
+    var body: some View {
+        ZStack {
+            Color.blue.opacity(0.4).ignoresSafeArea()
+        HStack {
+                
+            }
+        }
+    }
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
