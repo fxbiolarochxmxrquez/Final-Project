@@ -9,15 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            ZStack {
+                Color.blue.opacity(0.4).ignoresSafeArea()
+                VStack {
+                Text("Meditation App")
+                    .font(.title)
+                    .fontWeight(.bold)
+              
+            }
+            .padding()
+            }
         }
-        .padding()
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
