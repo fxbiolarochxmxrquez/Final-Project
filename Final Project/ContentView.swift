@@ -12,11 +12,12 @@ struct ContentView: View {
         NavigationView {
             ZStack {
                 Color.blue.opacity(0.4).ignoresSafeArea()
-                VStack {
+            VStack {
                 Text("Meditation App")
                     .font(.title)
                     .fontWeight(.bold)
                 NavigationLink("Start Session", destination: InstructionsView())
+                
             }
             .padding()
             }
@@ -25,14 +26,55 @@ struct ContentView: View {
 }
 
 struct InstructionsView: View {
+    @State private var isCenter = true
+    @State private var isCenter2 = true
     var body: some View {
-        ZStack {
+        ZStack{
             Color.blue.opacity(0.4).ignoresSafeArea()
-        HStack {
+        VStack {
             Button("Start") {
-                
-                }
+               
             }
+            RoundedRectangle(cornerRadius: 30)
+                .frame(width: 100, height: 100)
+                .foregroundStyle(Color.purple.opacity(0.7))
+                .offset(x: isCenter ? 0 : 50)
+                .rotationEffect(Angle(degrees: isCenter2 ? 0 : 360))
+            
+            RoundedRectangle(cornerRadius: 30)
+                .frame(width: 100, height: 100)
+                .foregroundStyle(Color.purple.opacity(0.7))
+                .offset(x: isCenter ? 0 : 50)
+                .rotationEffect(Angle(degrees: isCenter2 ? 0 : 360))
+          
+            RoundedRectangle(cornerRadius: 30)
+                .frame(width: 100, height: 100)
+                .foregroundStyle(Color.purple.opacity(0.7))
+                .offset(x: isCenter ? 0 : 50)
+                .rotationEffect(Angle(degrees: isCenter2 ? 0 : 360))
+           
+            RoundedRectangle(cornerRadius: 30)
+                .frame(width: 100, height: 100)
+                .foregroundStyle(Color.purple.opacity(0.7))
+                .offset(x: isCenter ? 0 : 50)
+                .rotationEffect(Angle(degrees: isCenter2 ? 0 : 360))
+          
+            RoundedRectangle(cornerRadius: 30)
+                .frame(width: 100, height: 100)
+                .foregroundStyle(Color.purple.opacity(0.7))
+                .offset(x: isCenter ? 0 : 50)
+                .rotationEffect(Angle(degrees: isCenter2 ? 0 : 360))
+           
+            RoundedRectangle(cornerRadius: 30)
+                .frame(width: 100, height: 100)
+                .foregroundStyle(Color.purple.opacity(0.7))
+                .offset(x: isCenter ? 0 : 50)
+                .rotationEffect(Angle(degrees: isCenter2 ? 0 : 360))
+            
+            }
+        .onAppear() {
+            
+        }
         }
     }
 }
